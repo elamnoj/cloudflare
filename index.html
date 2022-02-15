@@ -1,36 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Metopio - Network Error</title>
-  <style>
+  <style type="text/css">
     @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
 
-    
-    body{
+
+    body {
       text-align: center;
       margin: 30px;
       font-family: 'Lato', sans-serif;
     }
-  
+
     h1 {
       color: #1d84b5;
     }
-    
-    p, h2, h3 {
+
+    p,
+    h2,
+    h3 {
       color: #252d43;
     }
-    
-    .logo{
-        align:center;
-        width: 35%;
-        height: auto;
-      }
+
+    .logo {
+      align: center;
+      width: 35%;
+      height: auto;
+    }
     }
 
-    .FAQ{
+    .FAQ {
       padding-left: 150px;
       padding-right: 150px;
     }
@@ -51,7 +54,8 @@
       margin-right: 30px;
     }
 
-    .active, .collapsible:hover {
+    .active,
+    .collapsible:hover {
       background-color: #252d43;
     }
 
@@ -64,49 +68,57 @@
     }
   </style>
 </head>
+
 <body>
   <div class="main">
-    <img class="logo" src="https://i0.wp.com/public.metop.io/wp-content/uploads/2021/05/output-onlinepngtools.png?fit=844%2C459&amp;ssl=1" title="metopio-logo">
+    <img class="logo"
+      src="https://i0.wp.com/public.metop.io/wp-content/uploads/2021/05/output-onlinepngtools.png?fit=844%2C459&amp;ssl=1"
+      title="metopio-logo">
     <br>
     <h1 class="text-center">Metopio is Experiencing an Upstream Network Error</h1>
     <h3>Sorry! It seems something is wrong with Metopio's network provider. Our team is investigating.</h3>
-    <h3>If you need urgent assistance, please contact us at <a href="mailto:support@metop.io?subject=Urgent assistance">support@metop.io</a>.</h3>
+    <h3>If you need urgent assistance, please contact us at <a
+        href="mailto:support@metop.io?subject=Urgent assistance">support@metop.io</a>.</h3>
     <br>
     <div class="FAQ">
       <h2>Additional info:</h2>
       <button class="collapsible">Is there something wrong with my browser or connection?</button>
-        <div class="content">
-          <p>No, this error originates with Metopio's network provider. More than likely, Metopio is not the only site affected by this outage.</p>
-        </div>
+      <div class="content">
+        <p>No, this error originates with Metopio's network provider. More than likely, Metopio is not the only site
+          affected by this outage.</p>
+      </div>
       <button class="collapsible">When will Metopio be back online?</button>
-        <div class="content">
-          <p>Solutions to these issues can be difficult to assess, but we are working diligently to resolve it. You can sign up for updates at <a href="https://status.metop.io/">Metopio's status page</a> to be notified when Metopio is back online.</p>
-        </div>
+      <div class="content">
+        <p>Solutions to these issues can be difficult to assess, but we are working diligently to resolve it. You can
+          sign up for updates at <a href="https://status.metop.io/">Metopio's status page</a> to be notified when
+          Metopio is back online.</p>
+      </div>
       <button class="collapsible">I have reports I need to run or data I need access to, what can I do?</button>
-        <div class="content">
-          <p>Contact us at <a href="mailto:support@metop.io?subject=Urgent assistance">support@metop.io</a> and we may be able to access or run them for you.</p>
-        </div> 
+      <div class="content">
+        <p>Contact us at <a href="mailto:support@metop.io?subject=Urgent assistance">support@metop.io</a> and we may be
+          able to access or run them for you.</p>
+      </div>
     </div>
     <br>
     <h3>Technical info on this error:</h3>
-  ::CLOUDFLARE_ERROR_500S_BOX::
-</div>
+    ::CLOUDFLARE_ERROR_500S_BOX::
+  </div>
 </body>
 <script>
-var coll = document.getElementsByClassName("collapsible");
-var i;
+  var coll = document.getElementsByClassName("collapsible");
+  var i;
 
-for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var content = this.nextElementSibling;
-    if (content.style.maxHeight){
-      content.style.maxHeight = null;
-    } else {
-      content.style.maxHeight = content.scrollHeight + "px";
-    } 
-  });
-}
+  for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function () {
+      this.classList.toggle("active");
+      var content = this.nextElementSibling;
+      if (content.style.maxHeight) {
+        content.style.maxHeight = null;
+      } else {
+        content.style.maxHeight = content.scrollHeight + "px";
+      }
+    });
+  }
 </script>
-</html>
 
+</html>
